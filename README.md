@@ -11,7 +11,7 @@ For development, you will only need Node.js installed in your environement. You 
 3. pug
 
 ### Node
-- #### Node installation on Windows
+-  Node installation on Windows
 
   Just go on [official Node.js website](https://nodejs.org/) and download the installer.
 
@@ -46,7 +46,9 @@ If you need to update `npm`, you can make it using `npm`
 ## Configure app
 
 Now we are ready to run the application with the following command:
+-
   $ node main.js
+ -
 Go to chrome and enter the url: http://localhost:3000/home-page
 
 
