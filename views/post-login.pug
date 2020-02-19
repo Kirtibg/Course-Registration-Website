@@ -1,0 +1,187 @@
+
+doctype html
+html
+    
+    script(language='JavaScript').
+        javascript:window.history.forward(1)
+    body
+        meta(charset='utf-8')
+        title #{title}
+        style.
+            .class{
+            background:#29baae;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Source Sans Pro', sans-serif;
+            overflow: scroll;
+            }
+            .main {
+            flex: 0 0 100%;
+            background: #29baae;
+            }
+            .main__content {
+            background: #29baae;
+            padding: 40px;
+            }
+            .main input[type="submit"] {
+            width: 20%;
+            position:center;
+            bottom:0;
+            padding: 15px;
+            background-color: #535b63;
+            border: 0;
+            cursor: pointer;
+            font-weight: bold;
+            color: #ffffff;
+            }
+            .title {
+            margin-bottom: 1em;
+            }
+            .card {
+            margin: 20px;
+            text-align: left;
+            font-size: 20px;
+            width:250px;
+            height:300px;
+            length: 75%;
+            background:#cae0df;
+            padding: 20px;
+            color:black;
+            border-radius: 10px;
+            }
+            .card__title {
+            text-align: center;
+            margin: 0 center;
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            margin-top:0.5em;
+            color:#535b63;
+            }
+            .card__extra {
+            margin: 0;
+            }
+            .card__extra.li{
+                list-style-position: outside;
+            }
+            .dashcards {
+            overflow: scroll;
+            width:100%;
+            height:100%;
+            length: 100%;
+            margin-bottom: 40px;
+            display: flex;
+            margin-left: -10px;
+            margin-right: -10px;
+            }
+            .dashcards::-webkit-scrollbar {
+            display: none;
+            }
+            .dashcards .col {
+            padding: 0 15px;
+            }
+            .card input[type="submit"] {
+            width: 100%;
+            position:relative;
+            bottom:0;
+            padding: 15px;
+            background-color: #535b63;
+            border: 0;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-weight: bold;
+            color: #ffffff;
+            }
+            .card input[type="submit"]:hover {
+            background-color: #29baae;
+            }
+            
+            ul.a {
+            list-style-position: outside;
+            }
+            .class h1 {
+            text-align: center;
+            color: #FFFFFF;
+            margin-top:0%;
+            margin-bottom:0%;
+            font-size: 40px;
+            padding: 0px 10px 0px 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight:300;
+            }
+           
+           
+    body
+        .class   
+            .main
+                form(method='GET' action='/logout')
+                    input(
+                        type='submit'
+                        value='Logout'
+                    )
+                h1 #{title}
+                .main__content
+                    h1 Courses Available  
+                    .dashcards  
+                        each i in Array_courses_available
+                            form(method='POST' action='/post-selection')
+                                .col
+                                    .card
+                                        h2.card__title  #{i.Course_name}
+                                        p.card__extra  
+                                            ul.a 
+                                                li Course Name : #{i.Course_name}
+                                                li Course ID : #{i.Course_ID}
+                                                li Faculty Name: #{i.Faculty_Name}
+                                                li Slot : #{i.Slot}
+                                          
+                                            input(
+                                                type='hidden'
+                                                name='Course_ID'
+                                                value=i.Course_ID 
+                                                required=''
+                                                )
+                                            input(
+                                                type='submit'
+                                                value='subscribe course'
+                                            )
+                        else
+                            h1 There are no courses available.
+                            br
+            .main
+                .main__content
+                    h1 Registered Courses  
+                    .dashcards
+                        each i in Array_courses_registered
+                            form(method='POST' action='/post-selection')
+                                .col
+                                    .card
+                                        h2.card__title  #{i.Course_name}
+                                        p.card__extra  
+                                            ul.a
+                                                li Course Name : #{i.Course_name}
+                                                li Course ID : #{i.Course_ID}
+                                                li Faculty Name: #{i.Faculty_Name}
+                                                li Slot : #{i.Slot}
+                                               
+                                               
+                       
+                        else
+                            br
+
+                            
+                            h1 You have not registered to any course.
+                            br
+            
+                    
+                        
+
+          
+                                    
+                    
+
+
+

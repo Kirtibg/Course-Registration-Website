@@ -1,0 +1,78 @@
+doctype html
+html
+
+script(language='JavaScript').
+javascript:window.history.forward(1)
+    head
+        
+
+        meta(charset='utf-8')
+        title #{title}
+        style.
+            .class{
+            
+            
+            background: linear-gradient(to bottom right, #0c9c91 10%, #3fe0d3 100%);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Source Sans Pro', sans-serif;
+            overflow: scroll;
+            }
+            .login-form {
+            width: 300px;
+            margin: 0 auto;
+           
+            
+            }
+            .class h1 {
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 50px;
+            padding: 20px 0 20px 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight:300;
+            }
+            .login-form input[type="submit"] {
+            position:relative;
+            width: 100%;
+            padding: 20px;
+            -background-color: fade(white, 20%);
+            -border:1px solid fade(white, 40%);
+            border-radius: 15px;
+            box-sizing: border-box;
+            cursor: pointer;
+            color: #097d74;
+            font-weight:300;
+            font-size: 20px;
+
+            }
+            .login-form input[type="submit"]:hover {
+            background-color: #b0ebe7;
+
+            }
+
+    body
+        .class
+            h1 #{title}
+            .login-form
+                
+                form(method='GET' action='/add-course')
+                    input(
+                        type='submit'
+                        value='Add Course')
+                br
+                form(method='GET' action='/student-registration')
+                    input(
+                        type='submit'
+                        value='Student Registration')
+                br
+                form(method='GET' action='/student-login')
+                    input(
+                        type='submit'
+                        value='Student Login')
+
+
