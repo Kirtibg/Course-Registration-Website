@@ -1,0 +1,17 @@
+{"First_name":"Kirti","Last_name":"Bhagat","Student_ID":"17BLC1046","Branch":"ECM","Courses":["CSE1111","ECE1100","CSE1444"],"Password":"qwertyui"}
+{"First_name":"Dibyanshu","Last_name":"Gautam","Student_ID":"17BCE1328","Branch":"CSE","Courses":["CSE1111","ECE1100","ECM3333"],"Password":"dibyanshu"}
+{"First_name":"Ishani ","Last_name":"Tibrewal","Student_ID":"17BLC1117","Branch":"ECM","Courses":["CSE1111","ECE1100","CSE1444","ECM3333","CSE2004","cook1122","CSE3000","MGT2022"],"Password":"tibrewal"}
+{"First_name":"Manas","Last_name":"Srivastava","Student_ID":"17BLC1142","Branch":"ECM","Courses":["CSE1111"],"Password":"srivastava"}
+{"First_name":"k","Last_name":"k","Student_ID":"k","Branch":"k","Password":"qazwsxed","Courses":["CSE1111"]}
+{"First_name":"eshwar","Last_name":"Reddy","Student_ID":"17BCE1078","Branch":"CSE","Password":"Varshini@888","Courses":["cook1122"]}
+{"First_name":"Manasvi","Last_name":"Aggarwal","Student_ID":"17BEE1000","Branch":"ECE","Password":"manasvi1","Courses":["ECE1100","MGT2022","cook1122"]}
+{"First_name":"Manasvi","Last_name":"Aggarwal","Student_ID":"17BEE1000","Branch":"ECE","Password":"manasvi1","Courses":["ECE1100","MGT2022","cook1122"]}
+{"First_name":"Manasvi","Last_name":"Aggarwal","Student_ID":"17BEE1000","Branch":"ECE","Password":"manasvi1","Courses":["ECE1100","MGT2022","cook1122"]}
+{"First_name":"Manasvi","Last_name":"Aggarwal","Student_ID":"17BEE1000","Branch":"ECE","Password":"manasvi1","Courses":["ECE1100","MGT2022","cook1122"]}
+{"First_name":"Manasvi","Last_name":"Aggarwal","Student_ID":"17BEE1000","Branch":"ECE","Password":"manasvi1","Courses":["ECE1100","MGT2022","cook1122"]}
+{"First_name":"Manasvi","Last_name":"Aggarwal","Student_ID":"17BEE1000","Branch":"ECE","Password":"manasvi1","Courses":["ECE1100","MGT2022","cook1122"]}
+{"First_name":"Manasvi","Last_name":"Aggarwal","Student_ID":"17BEE1000","Branch":"ECE","Password":"manasvi1","Courses":["ECE1100","MGT2022","cook1122"]}
+{"First_name":"Manasvi","Last_name":"Aggarwal","Student_ID":"17BEE1000","Branch":"ECE","Password":"manasvi1","Courses":["ECE1100","MGT2022","cook1122"]}
+{"First_name":"Manasvi","Last_name":"Aggarwal","Student_ID":"17BEE1000","Branch":"ECE","Password":"manasvi1","Courses":["ECE1100","MGT2022","cook1122"]}
+{"First_name":"Manasvi","Last_name":"Aggarwal","Student_ID":"17BEE1000","Branch":"ECE","Password":"manasvi1","Courses":["ECE1100","MGT2022","cook1122"]}
+{"First_name":"Manasvi","Last_name":"Aggarwal","Student_ID":"17BEE1000","Branch":"ECE","Password":"manasvi1","Courses":["ECE1100","MGT2022","cook1122"]}
