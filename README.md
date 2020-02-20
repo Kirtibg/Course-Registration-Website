@@ -67,8 +67,10 @@ This project using nodejs gives a basic understanding of how asynchronous progra
 Use of nodejs functions like promise saves us from a lot of nested callback functions(callback hell).
 Lodash helps to deal with arrays to ease working with files for database.
 
-# I thank PayPAl VAP team for their support and guidance in the making of this project.
+
     
 ## Database:
    I have used text files to save data in the same folder as the code
    Sample file is given with the code
+   
+#### I thank PayPal VAP team for their support and guidance in the making of this project.
