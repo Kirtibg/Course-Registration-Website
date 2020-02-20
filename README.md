@@ -16,7 +16,7 @@ For development, you will only need Node.js installed in your environement. You 
 
   Just go on [official Node.js website](https://nodejs.org/) and download the installer.
 
--
+
 If the installation was successful, you should be able to run the following command.
 
     $ node --version
