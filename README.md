@@ -43,18 +43,18 @@ If you need to update `npm`, you can make it using `npm`
      $ npm install lodash 
 
 
---
+
 
 
 # Configure app
--
+
     Now we are ready to run the application with the following command:
 -
     $ node main.js
- -
+ 
 Go to chrome and enter the url: http://localhost:3000/home-page
 
--
+
 
 ## Appplication
 This application involes three major pages:
