@@ -62,6 +62,12 @@ This application involes three major pages:
    - Registering as a student page
    - Login student page where a student can subscribe to available courses
     
+    
+### Database:
+   I have used text files to save data in the same folder as the code
+   Sample file is given with the code
+   
+  
 ### Things Learnt
  - The use of nodejs in this project gives us a basic understanding of how asynchronous programming works.
  - Use of functions like "promise" saves us from a lot of nested callback functions(callback hell). It allows us to associate handlers to  an asynchronous action's eventual success value or failure reason. Using promise we can make asynchronous methods return values like synchronous methods.
@@ -69,8 +75,6 @@ This application involes three major pages:
  - We also use express session to assign a student an ID and make all further requests using that ID.
 
     
-### Database:
-   I have used text files to save data in the same folder as the code
-   Sample file is given with the code
+
    
 #### I thank PayPal VAP team for their support and guidance in the making of this project.
