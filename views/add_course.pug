@@ -40,7 +40,7 @@ html
             }
             .login-form input[type="submit"] {
             position:relative;
-            width: 50%;
+            width: 60%;
             padding: 10px;
             display:block;
             margin-left:auto;
@@ -66,36 +66,47 @@ html
     body
         .class
             .login-form
-                h1 Add Course
+                h1 Add A Course
                 form(method='POST' action='/post-course')
                     input(
                         type='text'
                         name='Course_name'
-                        placeholder='Course_name'
-                        required=''
+                        placeholder='Course Name'
+                        required="required" 
+                      
+                      
                     )
                     input(
                         type='text'
                         name='Course_ID'
-                        placeholder='Course_ID'
+                        placeholder='Course ID'
                         required=''
+                       
                     )
                     input(
                         type='text'
                         name='Faculty_Name'
-                        placeholder='Faculty_Name'
+                        placeholder='Faculty Name'
                         required=''
+                        
                     )
                     input(
                         type='text'
                         name='Slot'
-                        placeholder='Slot'
+                        placeholder='Slots'
                         required=''
-                        )
+                        
+                    )
                     
                         
                     input(
                         type='submit'
+                    )
+                    br
+                form(method='GET' action='/home-page')
+                    input(
+                        type='submit'
+                        value='Back to Home Page'
                     )
 
 

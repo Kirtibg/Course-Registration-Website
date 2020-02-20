@@ -28,8 +28,9 @@ html
             padding: 40px;
             }
             .main input[type="submit"] {
+          
             width: 20%;
-            position:center;
+            position:relative ;
             bottom:0;
             padding: 15px;
             background-color: #535b63;
@@ -54,9 +55,10 @@ html
             border-radius: 10px;
             }
             .card__title {
+            
             text-align: center;
             margin: 0 center;
-            font-size: 2.5em;
+            font-size: 1.5em;
             margin-bottom: 0.5em;
             margin-top:0.5em;
             color:#535b63;
@@ -85,11 +87,11 @@ html
             }
             .card input[type="submit"] {
             width: 100%;
+           
             position:relative;
-            bottom:0;
+            top:10px;
             padding: 15px;
             background-color: #535b63;
-            border: 0;
             box-sizing: border-box;
             cursor: pointer;
             font-weight: bold;
@@ -107,12 +109,32 @@ html
             color: #FFFFFF;
             margin-top:0%;
             margin-bottom:0%;
+            font-size: 50px;
+            padding: 0px 10px 0px 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight:300;
+            }
+            .class h2 {
+            text-align: center;
+            color: #FFFFFF;
+            margin-top:0%;
+            margin-bottom:0%;
             font-size: 40px;
             padding: 0px 10px 0px 0;
             font-family: 'Source Sans Pro', sans-serif;
             font-weight:300;
             }
-           
+            .class h3 {
+            text-align: center;
+            color: #FFFFFF;
+            margin-top:0%;
+            margin-bottom:0%;
+            font-size: 25px;
+            padding: 0px 10px 0px 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight:300;
+            }
+            
            
     body
         .class   
@@ -124,13 +146,13 @@ html
                     )
                 h1 #{title}
                 .main__content
-                    h1 Courses Available  
+                    h2 Courses Available  
                     .dashcards  
                         each i in Array_courses_available
                             form(method='POST' action='/post-selection')
                                 .col
                                     .card
-                                        h2.card__title  #{i.Course_name}
+                                        h4.card__title  #{i.Course_name}
                                         p.card__extra  
                                             ul.a 
                                                 li Course Name : #{i.Course_name}
@@ -146,26 +168,36 @@ html
                                                 )
                                             input(
                                                 type='submit'
-                                                value='subscribe course'
+                                                value='Subscribe '
                                             )
                         else
-                            h1 There are no courses available.
+                            h3 There are no courses available.
                             br
             .main
                 .main__content
-                    h1 Registered Courses  
+                    h2 Registered Courses  
                     .dashcards
                         each i in Array_courses_registered
                             form(method='POST' action='/post-selection')
                                 .col
                                     .card
-                                        h2.card__title  #{i.Course_name}
+                                        h4.card__title  #{i.Course_name}
                                         p.card__extra  
                                             ul.a
                                                 li Course Name : #{i.Course_name}
                                                 li Course ID : #{i.Course_ID}
                                                 li Faculty Name: #{i.Faculty_Name}
                                                 li Slot : #{i.Slot}
+                                            input(
+                                                type='hidden'
+                                                name='Course_ID'
+                                                value=i.Course_ID 
+                                                required=''
+                                                )
+                                            input(
+                                                type='submit'
+                                                value='Unsubscribe '
+                                            )
                                                
                                                
                        
@@ -173,7 +205,7 @@ html
                             br
 
                             
-                            h1 You have not registered to any course.
+                            h3 You have not registered to any course.
                             br
             
                     

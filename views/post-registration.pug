@@ -30,7 +30,16 @@ html
             padding: 10px 0 10px 0;
             font-family: 'Source Sans Pro', sans-serif;
             font-weight:300;
-            margin-bottom:40px;
+            margin-bottom:5px;
+            }
+            .class h2 {
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 30px;
+            padding: 10px 0 10px 0;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight:300;
+            margin-bottom:15px;
             }
             .login-form input[type="submit"] {
             position:relative;
@@ -54,26 +63,20 @@ html
 
     body
         .class
-            h1 You have Successfully Registered.
+            h1 #{title}
+            h1 #{title1}
+            h2 #{title2}
             .login-form
                 br
                 br
-                form(method='GET' action='/student-login')
-                    input(
-                    type='submit'
-                    name='Login'
-                    placeholder='Login'
-                    value='Login'
-                    )
-                    br
-                    br
-                    br
+               
+                   
                 form(method='GET' action='/home-page')
                     input(
                     type='submit'
                     name='Home Page'
-                    placeholder='Home Page'
-                    value='Home Page'
+                    placeholder='Return to Home Page'
+                    value='Return to Home Page'
                     )
                    
                    
