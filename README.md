@@ -2,7 +2,7 @@
 
 This is a Web application called CoureDesk where courses can be created for students to register and subscribe. 
 
-## Requirements
+### Requirements
 
 For development, you will only need Node.js installed in your environement. You will also require the following modules:
 1. express
@@ -30,7 +30,7 @@ If you need to update `npm`, you can make it using `npm`
     $ npm install npm -g
 
 
-## Install
+### Install
 
    Clone/download the project from the link: https://github.com/Kirtibg/Course-Registration
    In the terminal, go to the directory where the extracted folder is saved
@@ -46,7 +46,7 @@ If you need to update `npm`, you can make it using `npm`
 
 
 
-# Configure app
+### Configure app
 
     Now we are ready to run the application with the following command:
 -
@@ -56,20 +56,20 @@ Go to chrome and enter the url: http://localhost:3000/home-page
 
 
 
-## Application
+### Application
 This application involes three major pages:
    - Adding a Course page
    - Registering as a student page
    - Login student page where a student can subscribe to available courses
     
-## Things Learnt
+### Things Learnt
 This project using nodejs gives a basic understanding of how asynchronous programming works.
 Use of nodejs functions like promise saves us from a lot of nested callback functions(callback hell).
 Lodash helps to deal with arrays to ease working with files for database.
 
 
     
-## Database:
+### Database:
    I have used text files to save data in the same folder as the code
    Sample file is given with the code
    
