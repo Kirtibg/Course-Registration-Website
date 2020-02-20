@@ -1,6 +1,6 @@
 # Course Registration Application
 
-This is a Web application where students can register and subscribe to the courses offered. 
+This is a Web application called CoureDesk where courses can be created for students to register and subscribe. 
 
 ---
 ## Requirements
@@ -32,10 +32,11 @@ If you need to update `npm`, you can make it using `npm`
 
 ## Install
 
-    $ clone/download the project from the link: https://github.com/Kirtibg/Course-Registration
-    $ In the terminal, go to the directory where the extracted folder is saved
-    $ go inside the folder
-    Now install the following modules using commands:
+   Clone/download the project from the link: https://github.com/Kirtibg/Course-Registration
+   In the terminal, go to the directory where the extracted folder is saved
+   Open the prject folder 
+   Now install the following modules using commands:
+   
      $ npm install express
      $ npm install express-session
      $ npm install pug
@@ -45,15 +46,15 @@ If you need to update `npm`, you can make it using `npm`
 --
 
 
-## Configure app
-
-Now we are ready to run the application with the following command:
+# Configure app
 -
-  $ node main.js
+    Now we are ready to run the application with the following command:
+-
+    $ node main.js
  -
 Go to chrome and enter the url: http://localhost:3000/home-page
 
-
+-
 
 ## Appplication
 This application involes three major pages:
