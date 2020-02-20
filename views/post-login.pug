@@ -1,9 +1,14 @@
 
 doctype html
 html
+    script(type='text/javascript').
+        function myFunction(string) {
+        confirm(string);
+        }
     
     script(language='JavaScript').
         javascript:window.history.forward(1)
+    
     body
         meta(charset='utf-8')
         title #{title}
@@ -98,7 +103,7 @@ html
             color: #ffffff;
             }
             .card input[type="submit"]:hover {
-            background-color: #29baae;
+            background-color: #1ab0a3;
             }
             
             ul.a {
@@ -169,6 +174,7 @@ html
                                             input(
                                                 type='submit'
                                                 value='Subscribe '
+                                                onclick="myFunction('Are you sure you want to subscribe')"
                                             )
                         else
                             h3 There are no courses available.
@@ -197,6 +203,7 @@ html
                                             input(
                                                 type='submit'
                                                 value='Unsubscribe '
+                                                onclick="myFunction('Are you sure you want to unsubscribe')"
                                             )
                                                
                                                
