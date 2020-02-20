@@ -35,12 +35,12 @@ If you need to update `npm`, you can make it using `npm`
    - Clone/download the project from the link: https://github.com/Kirtibg/Course-Registration
    - Using command promt, navigate to the directory where the project is saved.
    - Open the pr0ject folder 
-   - Now install the following modules using commands:
+   - Now install the following modules using commands
    
-     $ npm install express
-     $ npm install express-session
-     $ npm install pug
-     $ npm install lodash 
+    $ npm install express
+    $ npm install express-session
+    $ npm install pug
+    $ npm install lodash 
 
 
 
