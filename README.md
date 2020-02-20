@@ -63,10 +63,10 @@ This application involes three major pages:
    - Login student page where a student can subscribe to available courses
     
 ### Things Learnt
--The use of nodejs in this project gives us a basic understanding of how asynchronous programming works.
--Use of functions like "promise" saves us from a lot of nested callback functions(callback hell). It allows us to associate handlers to  an asynchronous action's eventual success value or failure reason. Using promise we can make asynchronous methods return values like synchronous methods.
--In this project we also use Lodash, a Javascript utility library to help us deal with arrays and simplify working with files as database.
--We also use express session to assign a student an ID and make all further requests using that ID.
+ - The use of nodejs in this project gives us a basic understanding of how asynchronous programming works.
+ - Use of functions like "promise" saves us from a lot of nested callback functions(callback hell). It allows us to associate handlers to  an asynchronous action's eventual success value or failure reason. Using promise we can make asynchronous methods return values like synchronous methods.
+ - In this project we also use Lodash, a Javascript utility library to help us deal with arrays and simplify working with files as database.
+ - We also use express session to assign a student an ID and make all further requests using that ID.
 
     
 ### Database:
