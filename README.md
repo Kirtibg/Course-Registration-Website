@@ -48,9 +48,9 @@ If you need to update `npm`, you can make it using `npm`
 
 ### Configure app
 
-    Now we are ready to run the application with the following command:
--
-    $ node main.js
+  - Now we are ready to run the application with the following command:
+
+         $ node main.js
  
 On the browser, access link: http://localhost:3000/home-page
 
