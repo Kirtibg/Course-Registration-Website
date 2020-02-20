@@ -62,7 +62,7 @@ This application involes three major pages:
    - Registering as a student page
    - Login student page where a student can subscribe to available courses
     
-### Things Learnt
+## Things Learnt
 This project using nodejs gives a basic understanding of how asynchronous programming works.
 Use of nodejs functions like promise saves us from a lot of nested callback functions(callback hell).
 Lodash helps to deal with arrays to ease working with files for database.
