@@ -56,15 +56,18 @@ Go to chrome and enter the url: http://localhost:3000/home-page
 
 
 
-## Appplication
+## Application
 This application involes three major pages:
    - Adding a Course page
    - Registering as a student page
    - Login student page where a student can subscribe to available courses
     
+### Things Learnt
 This project using nodejs gives a basic understanding of how asynchronous programming works.
-Use of promise saves us from a lot of nested callback functions(callback hell) 
+Use of nodejs functions like promise saves us from a lot of nested callback functions(callback hell).
 Lodash helps to deal with arrays to ease working with files for database.
+
+# I thank PayPAl VAP team for their support and guidance in the making of this project.
     
 ## Database:
    I have used text files to save data in the same folder as the code
