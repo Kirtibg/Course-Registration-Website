@@ -32,10 +32,10 @@ If you need to update `npm`, you can make it using `npm`
 
 ### Install
 
-   -Clone/download the project from the link: https://github.com/Kirtibg/Course-Registration
-   -In the terminal, go to the directory where the extracted folder is saved
-   -Open the prject folder 
-   -Now install the following modules using commands:
+   - Clone/download the project from the link: https://github.com/Kirtibg/Course-Registration
+   - In the terminal, go to the directory where the extracted folder is saved
+   - Open the prject folder 
+   - Now install the following modules using commands:
    
      $ npm install express
      $ npm install express-session
