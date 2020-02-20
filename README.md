@@ -32,7 +32,7 @@ If you need to update `npm`, you can make it using `npm`
 
 ### Install
 
-   - Clone/download the project from the link: https://github.com/Kirtibg/Course-Registration
+   - Clone/download the project from the link: https://github.com/Kirtibg/Course-Registration-Website
    - Using command promt, navigate to the directory where the project is saved.
    - Open the pr0ject folder 
    - Now install the following modules using commands
