@@ -58,9 +58,9 @@ Go to chrome and enter the url: http://localhost:3000/home-page
 
 ## Appplication
 This application involes three major pages:
-    1. Adding a Course page
-    2. Registering as a student page
-    3. Login student page where a student can subscribe to available courses
+   - 1. Adding a Course page
+   - 2. Registering as a student page
+   - 3. Login student page where a student can subscribe to available courses
     
 This project using nodejs gives a basic understanding of how asynchronous programming works.
 Use of promise saves us from a lot of nested callback functions(callback hell) 
