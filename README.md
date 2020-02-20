@@ -64,8 +64,8 @@ This application involes three major pages:
     
     
 ### Database:
-   I have used text files to save data in the same folder as the code
-   Sample file is given with the code
+  - I have used text files to save data in the same folder as the code
+  - Sample file is given with the code
    
   
 ### Things Learnt
