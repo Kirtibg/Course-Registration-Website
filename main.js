@@ -11,7 +11,7 @@ var session = require('express-session');
 
 app.get('/home-page',function(req,res){
     res.render('home-page',{
-         title:"Welcome "
+         title:"Welcome to CourseDesk"
     });
 })
 
@@ -45,8 +45,9 @@ secure: true,
 ephemeral: true}));
 
 app.post('/post-course',function(req,res){
-    res.render('home-page',{
-    title:"Course has been successfully added",  
+    res.render('post-registration',{
+    title:"Course "+req.body.Course_name+" has been added",
+    title1:""
     });
     var data1=JSON.stringify(req.body)
     fs.appendFileSync('courses.txt', data1);
@@ -56,12 +57,39 @@ app.post('/post-course',function(req,res){
 
 
 app.post('/post-registration',function(req,res){
-    res.render('post-registration',{
-        title:"You have successfully registered",  
-    });
     var data1=JSON.stringify(req.body)
-    fs.appendFileSync('students.txt', data1);
-    fs.appendFileSync('students.txt', "\n");
+    const promise=modules.get_data("./students.txt");
+    
+    promise.then((k)=>{
+        if(modules.check_ID(k,data1)){
+            data1=JSON.parse(data1)
+            req.session.username=data1.Student_ID
+            req.session.name=data1.First_name
+            var scripts1=modules.get_data_student("./courses.txt",req.session.username);
+           
+            scripts1.then((k)=>{
+                res.render('post-registration',{
+                    title:"Congratulations "+ req.body.First_name+ ' !',
+                    title1:" You have successfully registered" ,
+                    title2:"Login to get started with CourseDesk!"
+                });
+                var data1=JSON.stringify(req.body)
+                fs.appendFileSync('students.txt', data1);
+                fs.appendFileSync('students.txt', "\n");})
+                
+            scripts1.catch((err)=>console.log(err));
+        }
+        else{
+            res.render('student-registration',{
+                title:"Student ID already exists\n Try Again"
+                
+        }) 
+    }
+});
+    promise.catch((err)=>console.log(err));
+
+   
+    
 })
 
 
@@ -75,7 +103,7 @@ app.post('/post-login',function(req,res){
         if(modules.compare(k,data1)){
             data1=JSON.parse(data1)
             req.session.username=data1.Student_ID
-            
+            req.session.name=data1.First_name
             var scripts1=modules.get_data_student("./courses.txt",req.session.username);
            
             scripts1.then((k)=>{
@@ -90,8 +118,8 @@ app.post('/post-login',function(req,res){
         }
         else{
             res.render('student-login',{
-                title:"Wrong details!\n Try Again"
-                
+                title:"Student ID/Password do not match",
+                title1:"Try Again!"
         }) 
     }});
     promise.catch((err)=>console.log(err));

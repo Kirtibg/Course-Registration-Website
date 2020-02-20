@@ -1,6 +1,6 @@
 //helping modules
 const fs = require('fs');
-
+var _ = require('lodash');
 
 
 //function to get student data from txt file
@@ -98,8 +98,28 @@ function compare(array,data1){
     }       
 }
 
+function check_ID(array,data1){
+    var check=0;
+  
+    data1=JSON.parse(data1)
+    for (let i = 0; i<array.length; i++){
+        var temp=array[i];
+        if(temp.Student_ID==data1.Student_ID ){
+            check=1;  
+        }
+    }
+    
+    if(check==0){
+        return true;
+    }
+    else{
+        return false;
+    }       
+}
 
-//function to add new Student to txt file
+
+
+//function to add or remove new Student to txt file
 function add(slot,Student_ID){
     
     var slot1=JSON.parse(slot)
@@ -116,8 +136,21 @@ function add(slot,Student_ID){
                 
                 if(k.Courses=='[]'){
                 k.Courses=[]}
+                console.log(k)
+                var unsub=0;
+                for (let j=0;j<k.Courses.length-1;j++){
+                    if(slot1.Course_ID==k.Courses[j]){
+                        unsub=1
+
+                    }
+                }
                 
-                k.Courses.push(slot1.Course_ID)
+                if(unsub!=0){
+                    k.Courses = _.without(k.Courses, slot1.Course_ID)
+                    
+                }
+                else{
+                k.Courses.push(slot1.Course_ID)}
                 
             }
             t.push(k)
@@ -131,7 +164,7 @@ function add(slot,Student_ID){
 }
 
 
-module.exports={"get_data":get_data,"compare":compare,"add":add,"get_data_student":get_data_student};
+module.exports={"get_data":get_data,"compare":compare,"add":add,"get_data_student":get_data_student,"check_ID":check_ID};
 
 
        

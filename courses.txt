@@ -6,3 +6,5 @@
 {"Course_name":"DIY","Course_ID":"MGT2022","Faculty_Name":"Sagarika Rauniar","Slot":"F2","About":"Do It Yourself class!  :)"}
 {"Course_name":"Cooking","Course_ID":"cook1122","Faculty_Name":"Varshini","Slot":"B2","About":"Cooking class"}
 {"Course_name":"OS","Course_ID":"CSE3000","Faculty_Name":"Abdul Qadir","Slot":"B2"}
+{"Course_name":"Java Programming","Course_ID":"1234","Faculty_Name":"Radhika","Slot":"d2"}
+{"Course_name":"NLP","Course_ID":"CSE2222","Faculty_Name":"Ilakiaselvan","Slot":"E2"}
