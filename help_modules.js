@@ -136,9 +136,9 @@ function add(slot,Student_ID){
                 
                 if(k.Courses=='[]'){
                 k.Courses=[]}
-                console.log(k)
+                
                 var unsub=0;
-                for (let j=0;j<k.Courses.length-1;j++){
+                for (let j=0;j<k.Courses.length;j++){
                     if(slot1.Course_ID==k.Courses[j]){
                         unsub=1
 

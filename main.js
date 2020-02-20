@@ -81,7 +81,7 @@ app.post('/post-registration',function(req,res){
         }
         else{
             res.render('student-registration',{
-                title:"Student ID already exists\n Try Again"
+                title:"Student ID already exists\n Please provide a new one."
                 
         }) 
     }
