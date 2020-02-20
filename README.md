@@ -2,7 +2,6 @@
 
 This is a Web application called CoureDesk where courses can be created for students to register and subscribe. 
 
----
 ## Requirements
 
 For development, you will only need Node.js installed in your environement. You will also require the following modules:
@@ -12,8 +11,9 @@ For development, you will only need Node.js installed in your environement. You 
 4. lodash 
 
 ### Node
--  Node installation on Windows
+Node.js is an application runtime environment for writing server-side applications in JavaScript. It's unique I/O model makes it much more flexible and best for scalable and real-time situations that are more demanding of our servers.
 
+ Node installation on Windows:
   Just go on [official Node.js website](https://nodejs.org/) and download the installer.
 
 
@@ -61,6 +61,10 @@ This application involes three major pages:
     1. Adding a Course page
     2. Registering as a student page
     3. Login student page where a student can subscribe to available courses
+    
+This project using nodejs gives a basic understanding of how asynchronous programming works.
+Use of promise saves us from a lot of nested callback functions(callback hell) 
+Lodash helps to deal with arrays to ease working with files for database.
     
 ## Database:
    I have used text files to save data in the same folder as the code
