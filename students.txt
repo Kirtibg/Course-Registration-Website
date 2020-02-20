@@ -1,5 +1,5 @@
-{"First_name":"Kirti","Last_name":"Bhagat","Student_ID":"17BLC1046","Branch":"ECM","Courses":["1234","CSE1444","ECM3333"],"Password":"qwertyui"}
-{"First_name":"Dibyanshu","Last_name":"Gautam","Student_ID":"17BCE1328","Branch":"CSE","Courses":["CSE1111","ECE1100","ECM3333"],"Password":"dibyanshu"}
+{"First_name":"Kirti","Last_name":"Bhagat","Student_ID":"17BLC1046","Branch":"ECM","Courses":["1234","ECE1100","CSE1444"],"Password":"qwertyui"}
+{"First_name":"Dibyanshu","Last_name":"Gautam","Student_ID":"17BCE1328","Branch":"CSE","Courses":["CSE1111","ECM3333"],"Password":"dibyanshu"}
 {"First_name":"Ishani ","Last_name":"Tibrewal","Student_ID":"17BLC1117","Branch":"ECM","Courses":["CSE1111","ECE1100","CSE1444","ECM3333","CSE2004","cook1122","CSE3000","MGT2022"],"Password":"tibrewal"}
 {"First_name":"Manas","Last_name":"Srivastava","Student_ID":"17BLC1142","Branch":"ECM","Courses":["CSE1111"],"Password":"srivastava"}
 {"First_name":"k","Last_name":"k","Student_ID":"k","Branch":"k","Password":"qazwsxed","Courses":["CSE1111"]}
@@ -8,3 +8,4 @@
 {"First_name":"Mehak","Last_name":"Gupta","Student_ID":"17BEE0000","Branch":"EEE","Password":"mehakgupta","Courses":["ECE1100"]}
 {"First_name":"Preeti","Last_name":"Bhunia","Student_ID":"17BEE0001","Branch":"EEE","Password":"preetibhunia","Courses":"[]"}
 {"First_name":"Deeksha","Last_name":"Gupta","Student_ID":"17BEE0002","Branch":"EEE","Password":"deeksha1","Courses":["CSE1111","ECE1100","CSE1444","ECM3333","CSE2004","MGT2022","cook1122","CSE3000","1234","CSE2222"]}
+{"First_name":"Vaibhav","Last_name":"Nagpal","Student_ID":"17BLC3333","Branch":"ECM","Password":"vaibhavnagpal","Courses":["ECE1100","CSE1444","MGT2022"]}

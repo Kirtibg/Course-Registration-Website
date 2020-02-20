@@ -8,3 +8,4 @@
 {"Course_name":"OS","Course_ID":"CSE3000","Faculty_Name":"Abdul Qadir","Slot":"B2"}
 {"Course_name":"Java Programming","Course_ID":"1234","Faculty_Name":"Radhika","Slot":"d2"}
 {"Course_name":"NLP","Course_ID":"CSE2222","Faculty_Name":"Ilakiaselvan","Slot":"E2"}
+{"Course_name":"Data Mining","Course_ID":"CSE0000","Faculty_Name":"Dibyanshu Gautam","Slot":"E2"}
