@@ -9,6 +9,7 @@ For development, you will only need Node.js installed in your environement. You 
 1. express
 2. express-session
 3. pug
+4. lodash 
 
 ### Node
 -  Node installation on Windows
@@ -38,6 +39,7 @@ If you need to update `npm`, you can make it using `npm`
      $ npm install express
      $ npm install express-session
      $ npm install pug
+     $ npm install lodash 
 
 
 --
